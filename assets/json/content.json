@@ -1,0 +1,6 @@
+{
+  "palettes": [
+    {"name": "Ocean", "colors": ["#0000FF", "#00FFFF"]},
+    {"name": "Forest", "colors": ["#00FF00", "#228B22"]}
+  ]
+}
