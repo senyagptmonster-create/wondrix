@@ -1,10 +1,10 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:wondrix/product/product_app.dart';
+import 'package:wondrix/wondrix_app.dart';
 
 void main() {
-  testWidgets('Smoke test', (WidgetTester tester) async {
-    await tester.pumpWidget(const MaterialApp(home: ProductApp()));
-    expect(find.byType(ProductApp), findsOneWidget);
+  testWidgets('WondrixApp smoke test', (WidgetTester tester) async {
+    await tester.pumpWidget(const WondrixApp());
+    await tester.pump();
+    expect(find.text('Palette Validator'), findsWidgets);
   });
 }
